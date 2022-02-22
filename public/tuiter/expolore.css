@@ -82,3 +82,40 @@
 .wd-botton-margin{
     margin-right: 50px;
 }
+.wd-xl-font-size{
+    font-size: 25px;
+}
+.wd-xl-search-area{
+    border-radius: 50px;
+    width: 400px;
+}.wd-xl-font-size-bar{
+    font-size: 15px;
+ }
+ .wd-xl-image-text-size{
+    font-size: 50px;
+     color: white;
+ }
+ .wd-xl-title{
+     font-size: 8px;
+     color: rgb(110, 118, 125);
+ }
+.wd-xl-main-text{
+    font-size: 20px;
+    margin-right: 200px;
+}
+.wd-xl-single-topic{
+    font-size: 20px;
+    color:black;
+}
+.wd-xl-author-style{
+    font-size: 20px;
+    color: black;
+}
+.wd-xl-who-to-follow{
+    font-size: 15px;
+    color: black;
+}
+.wd-l-single-topic{
+    font-size: 13px;
+    color:black;
+}
