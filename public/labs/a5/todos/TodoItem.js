@@ -5,6 +5,7 @@ const TodoItem = (todo) => {
 ${todo.done ? 'checked' : ''}/>
 ${todo.title}
 (${todo.status})
+
 </li>
 `);
 }
