@@ -8,7 +8,7 @@ import PostList from "../PostList/index.js";
 </div>
 
 <div class="col">
-${PostList}
+${PostList()}
 </div>
 
 <div class="d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">
