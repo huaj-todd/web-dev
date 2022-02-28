@@ -12,7 +12,7 @@ const PostSummaryItem = (post) => {
                     <p class="wd-content-margin wd-main-text " style="color: white">
                     ${post.title}
                     </p>
-                    <p class="wd-content-margin wd-topic-style" style="color: white">${post.tweets}</p>
+                    <p class="wd-content-margin wd-topic-style" style="color: white">${post.tweets? `${post.tweets}`: ""}</p>
      </div>
      </div>
 `);
