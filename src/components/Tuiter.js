@@ -6,7 +6,7 @@ const Tuiter = () => {
             <h1>Tuiter</h1>
             <Link to="/hello">
             Hello
-         </Link>
+         </Link> |
             <Link to="/labs">
                 Labs
             </Link>
