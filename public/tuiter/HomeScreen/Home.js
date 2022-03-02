@@ -1,5 +1,6 @@
 import NavigationSidebar from "../NavigationSidebar/index.js";
 import PostList from "../PostList/index.js";
+import PostSummaryList from "../PostSummaryList/index.js";
 (function ($) {
     $('#wd-explore').append(`
 <div class="row mt-2">
@@ -12,7 +13,7 @@ ${PostList()}
 </div>
 
 <div class="d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">
-
+${PostSummaryList()}
 </div>
 
 </div>

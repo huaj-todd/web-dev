@@ -8,7 +8,7 @@ const PostSummaryItem = (post) => {
                         <i class="fas fa-user-check" style="display:inline;color: white"></i>
                         <p class="wd-topic-style" style="display:inline;"> - ${post.time}</p>
                     </div>
-                    <img src=${post.image} class="wd-image">
+                    <img src=${post.image} class="wd-image-explore">
                     <p class="wd-content-margin wd-main-text " style="color: white">
                     ${post.title}
                     </p>
