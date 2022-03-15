@@ -1,0 +1,93 @@
+.wd-top-edge-title{
+    color: white;
+    font-size: 20px;
+}
+.wd-content-margin-one{
+    margin-left: 16px;
+    margin-top: 12px;
+}
+.wd-content-margin-two{
+    margin-left: 16px;
+    margin-bottom: 12px;
+    border-style: solid;
+    border-width: 1px;
+    border-left-color: black;
+    border-right-color: black;
+    border-top-color: black;
+    border-bottom-color: lightgray;
+}
+.wd-top-handle{
+    color: lightgray;
+    font-size: 13px;
+}
+.wd-change-image{
+    border-radius: 20px;
+    width: 48px;
+    height: 48px;
+    position: relative;
+}
+.wd-author-handle{
+    margin-left: 15px;
+    margin-top: 12px;
+}
+.wd-author{
+    color: white;
+    font-size: 15px;
+}
+.wd-handle{
+    color: lightgray;
+    font-size: 15px;
+}
+.wd-main-content{
+    font-size: 12px;
+    color: white;
+    width: 500px;
+    margin-right: 16px;
+    margin-bottom: 12px;
+    margin-left: 80px;
+}
+.wd-image{
+    width: 504px;
+    height: 264px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-left: 80px;
+}
+.wd-general-border{
+    border-color: rgb(47, 51, 54);
+    border-style: solid;
+    border-width: 1px;
+}
+.wd-small-title{
+    margin-top:12px;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+}
+.wd-small-text{
+    margin-top:12px;
+    font-size: 15px;
+    color: lightgray;
+}
+.wd-small-content{
+    width: 504px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-left: 80px;
+    padding: 12px;
+}
+.wd-icon-most-left{
+    margin-left: 80px;
+}
+.wd-icon{
+    margin-top: 12px;
+    margin-right:50px;
+}
+.wd-end-border{
+    border-style: solid;
+    border-width: 1px;
+    border-top-color: black;
+    border-left-color: black;
+    border-right-color: black;
+    border-bottom-color: rgb(47, 51, 54);
+}

@@ -3,9 +3,10 @@ import './App.css';
 import './vendors/bootstrap/css/bootstrap.min.css';
 import './vendors/bootstrap/bootstrap.min.css';
 import './vendors/fontawesome/css/all.min.css';
+import './components/Tuiter/expolore.css'
 import HelloWorld from "./components/HelloWorld";
-import Labs from "./components/Labs";
-import Tuiter from "./components/Tuiter";
+import Lab from "./components/Labs/index";
+import Tuiter from "./components/Tuiter/Tuiter";
 
 import {BrowserRouter, Route} from "react-router-dom";
 function App() {
@@ -16,7 +17,7 @@ function App() {
               <HelloWorld/>
           </Route>
           <Route path={["/", "/labs"]} exact={true}>
-              <Labs/>
+              <Lab/>
           </Route>
           <Route path="/tuiter" exact={true}>
               <Tuiter/>
