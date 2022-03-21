@@ -1,6 +1,6 @@
 import React from "react";
 import {Link} from "react-router-dom";
-const NavigationSidebar = (active = 'explore') => {
+const NavigationSidebar = (active ='home') => {
     return(
 <div className="list-group">
     <Link to="/" className="list-group-item list-group-item-action" href="/">

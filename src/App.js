@@ -20,11 +20,9 @@ function App() {
           <Route path={["/", "/labs"]} exact={true}>
               <Lab/>
           </Route>
-          <Route path="/tuiter" component={HomeScreen}>
-              <Route path="/tuiter/home" component={HomeScreen}/>
-              <Route path="/tuiter/explore" component={ExploreScreen}/>
-          </Route>
-
+          <Route path="/tuiter" exact={true} component={HomeScreen}/>
+          <Route path="/tuiter/home" component={HomeScreen}/>
+          <Route path="/tuiter/explore" component={ExploreScreen}/>
       </div>
       </BrowserRouter>
   );
