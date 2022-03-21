@@ -6,7 +6,8 @@ import './vendors/fontawesome/css/all.min.css';
 import './components/Tuiter/expolore.css'
 import HelloWorld from "./components/HelloWorld";
 import Lab from "./components/Labs/index";
-import Tuiter from "./components/Tuiter/Tuiter";
+import ExploreScreen from "./components/Tuiter/Tuiter";
+import HomeScreen from "./components/Tuiter/HomeScreen/Home"
 
 import {BrowserRouter, Route} from "react-router-dom";
 function App() {
@@ -19,9 +20,11 @@ function App() {
           <Route path={["/", "/labs"]} exact={true}>
               <Lab/>
           </Route>
-          <Route path="/tuiter" exact={true}>
-              <Tuiter/>
+          <Route path="/tuiter" component={HomeScreen}>
+              <Route path="/tuiter/home" component={HomeScreen}/>
+              <Route path="/tuiter/explore" component={ExploreScreen}/>
           </Route>
+
       </div>
       </BrowserRouter>
   );

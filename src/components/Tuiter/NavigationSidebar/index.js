@@ -1,17 +1,17 @@
 import React from "react";
-
+import {Link} from "react-router-dom";
 const NavigationSidebar = (active = 'explore') => {
     return(
 <div className="list-group">
-    <a className="list-group-item list-group-item-action" href="/">
+    <Link to="/" className="list-group-item list-group-item-action" href="/">
     <i className="fab fa-twitter"></i>
-    </a>
-    <a className="list-group-item list-group-item-action">
+    </Link>
+    <Link to="/tuiter/home" className={`list-group-item ${active === 'home' ? 'active' : ''}`}>
     <i className="fas fa-house-user">Home</i>
-    </a>
-    <a className="list-group-item list-group-item-action active ">
+    </Link>
+    <Link to="/tuiter/explore" className={`list-group-item ${active === 'explore' ? 'active' : ''}`}>
      <i className="fas fa-hashtag">Explore</i>
-     </a>
+    </Link>
      <a className="list-group-item list-group-item-action">
                 <i className="fas fa-bell">Notification</i>
       </a>

@@ -3,7 +3,7 @@ import NavigationSidebar from "./NavigationSidebar";
 import WhoToFollowList from "./WhoToFollowList/index";
 import ExploreComponent from "./ExploreScreen/ExploreComponent"
 import PostSummaryList from "./PostSummaryList";
-const Tuiter = () => {
+const ExploreScreen= () => {
     return(
         <>
             <div className="row mt-2">
@@ -22,4 +22,4 @@ const Tuiter = () => {
         </>
     )
 };
-export default Tuiter;
+export default ExploreScreen;
