@@ -16,7 +16,6 @@ function App() {
           <div className="container">
               <Routes>
                   <Route path="/">
-                      <Route index element={<Lab/>}/>
                       <Route path="labs"
                              element={<Lab/>}/>
                       <Route path="hello"
