@@ -2,6 +2,8 @@ import React, {useState} from "react";
 
 import {useSelector,useDispatch} from "react-redux";
 const Todos = () => {
+    const todos
+        = useSelector(state => state.todos);
     const [todo, setTodo] =
         useState({do: '', done: false});
     const updateTodoClickHandler = (todo) => {
@@ -46,22 +48,26 @@ const Todos = () => {
                             className="btn btn-primary">
                         Create New Todo
                     </button>
-                    {todo.do}
                 </li>
-                <li className="list-group-item">
-                    <input checked={todo.done}
-                           onChange={(event) =>
-                               updateTodoClickHandler(
-                                   {...todo,
-                                       done: event.target.checked})}
-                           type="checkbox"/>
-                    {todo.do}
-                    <button onClick={() =>
-                        deleteTodoClickHandler(todo)}
-                            className="btn btn-danger float-end">
-                        Delete
-                    </button>
-                </li>
+                {
+                    todos.map(todo =>
+                        <li className="list-group-item">
+                            <input checked={todo.done}
+                                   onChange={(event) =>
+                                       updateTodoClickHandler(
+                                           {...todo,
+                                               done: event.target.checked})}
+                                   type="checkbox"/>
+                            {todo.do}
+                            <button onClick={() =>
+                                deleteTodoClickHandler(todo)}
+                                    className="btn btn-danger float-end">
+                                Delete
+                            </button>
+                        </li>
+                    )
+                }
+
 
 
             </ul>
