@@ -3,6 +3,9 @@ import NavigationSidebar from "./NavigationSidebar";
 import WhoToFollowList from "./WhoToFollowList/index";
 import ExploreComponent from "./ExploreScreen/ExploreComponent"
 import PostSummaryList from "./PostSummaryList";
+
+import {Outlet} from "react-router-dom";
+
 const ExploreScreen= () => {
     return(
         <>
