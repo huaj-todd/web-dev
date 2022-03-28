@@ -19,6 +19,7 @@ const todosReducer = (state = data,
                 return newTodo;
             });
             return newTodos;
+
         case 'delete-todo':
             return state
                 .filter(todo =>

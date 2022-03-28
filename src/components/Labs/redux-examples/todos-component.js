@@ -1,9 +1,9 @@
 import React, {useState} from "react";
+
 import {useSelector,useDispatch} from "react-redux";
 const Todos = () => {
-    const todos
-        = useSelector(state => state.todos);
-    const dispatch = useDispatch();
+    const [todo, setTodo] =
+        useState({do: '', done: false});
     const updateTodoClickHandler = (todo) => {
         const action = {
             type: 'update-todo',
@@ -11,6 +11,14 @@ const Todos = () => {
         };
         dispatch(action);
     }
+    const todoChangeHandler = (event) => {
+        const doValue = event.target.value;
+        const newTodo = {
+            do: doValue
+        };
+        setTodo(newTodo);
+    }
+    const dispatch = useDispatch();
     const deleteTodoClickHandler = (todo) => {
         const action = {
             type: 'delete-todo',
@@ -25,18 +33,21 @@ const Todos = () => {
         };
         dispatch(action);
     }
-    const [todo, setTodo] = useState({do: ''});
-    const todoChangeHandler = (event) => {
-        const doValue = event.target.value;
-        const newTodo = {
-            do: doValue
-        };
-        setTodo(newTodo);
-    }
     return(
         <>
             <h3>Todos</h3>
             <ul className="list-group">
+                <li className="list-group-item">
+                    <input
+                        onChange={todoChangeHandler}
+                        value={todo.do}
+                        className="form-control"/>
+                    <button onClick={createTodoClickHandler}
+                            className="btn btn-primary">
+                        Create New Todo
+                    </button>
+                    {todo.do}
+                </li>
                 <li className="list-group-item">
                     <input checked={todo.done}
                            onChange={(event) =>
@@ -44,20 +55,15 @@ const Todos = () => {
                                    {...todo,
                                        done: event.target.checked})}
                            type="checkbox"/>
-                    <input
-                        onChange={todoChangeHandler}
-                        value={todo.do}
-                        className="form-control"/>
+                    {todo.do}
                     <button onClick={() =>
                         deleteTodoClickHandler(todo)}
                             className="btn btn-danger float-end">
                         Delete
                     </button>
-                    <button onClick={createTodoClickHandler}
-                            className="btn btn-primary">
-                        Create New Todo
-                    </button>
                 </li>
+
+
             </ul>
         </>
     );
