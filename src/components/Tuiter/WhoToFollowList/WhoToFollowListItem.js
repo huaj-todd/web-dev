@@ -22,7 +22,7 @@ const WhoToFollowListItem = (
         <div className="wd-who-to-follow wd-content-margin" >@{who.handle}</div>
     </div>
     <div className="col-3">
-      <button type="submit" className="btn btn-primary">Follow</button>
+      <button type="submit" className="btn btn-primary wd-button-radius">Follow</button>
     </div>
   </div>
 </div>

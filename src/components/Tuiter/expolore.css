@@ -1,6 +1,7 @@
 .wd-search-area{
-    border-radius: 50px;
-    width: 600px;
+    width: 400px;
+    background-color: black;
+    color: white;
 }
 .wd-img-text-setting{
     color: white;
@@ -9,7 +10,9 @@
 .wd-content-margin{
     margin-left: 16px;
 }
-
+.wd-button-radius{
+    border-radius: 20px;
+}
 .wd-gear{
     float: left;
 }
@@ -96,6 +99,7 @@
 .wd-xl-search-area{
     border-radius: 50px;
     width: 400px;
+
 }.wd-xl-font-size-bar{
     font-size: 15px;
  }
