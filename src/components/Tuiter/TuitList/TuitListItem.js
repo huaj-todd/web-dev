@@ -34,7 +34,6 @@ const TuitListItem= ({tuit}) => {
                     </div>
                     <div className="col">
                         <i className="fa fa-share wd-icon" >{""}</i>
-
                     </div>
 
             </div>
