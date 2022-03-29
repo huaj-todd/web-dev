@@ -10,4 +10,5 @@
   { "avatarIcon": "./tuiters/image_explores/NASA_logo.svg.png",
     "userName": "NASA", "handle": "NASA"},
   { "avatarIcon": "./tuiters/image_explores/Tesla_logo.png",
-    "userName": "Tesla", "handle": "Tesla"}]
+    "userName": "Tesla", "handle": "Tesla"}
+]

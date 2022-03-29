@@ -7,9 +7,10 @@ import './components/Tuiter/expolore.css'
 import HelloWorld from "./components/HelloWorld";
 import Lab from "./components/Labs/index";
 import ExploreScreen from "./components/Tuiter/Tuiter";
-import HomeScreen from "./components/Tuiter/HomeScreen/Home"
-
+import HomeScreen from "./components/Tuiter/home-screen/index"
+import Tuiter from "./components/Tuiter/index"
 import {BrowserRouter, Route,Routes} from "react-router-dom";
+
 function App() {
   return (
       <BrowserRouter>
@@ -21,7 +22,7 @@ function App() {
                       <Route path="hello"
                              element={<HelloWorld/>}/>
                       <Route path="tuiter"
-                             element={<HomeScreen/>}>
+                             element={<Tuiter/>}>
                           <Route index
                                  element={<HomeScreen/>}/>
                           <Route path="explore"
