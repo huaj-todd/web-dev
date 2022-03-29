@@ -10,16 +10,27 @@ const TuitListItem= ({tuit}) => {
 
         <div className="list-group-item">
             <div>
-            <p>id: {tuit._id}</p>
-            <img src= {tuit["avatar-image"]} className="wd-content-margin-one wd-change-image"/>
+                <i onClick={() => deleteTuit(tuit)} className="fas fa-remove-format fa-2x fa-pull-right"></i>
+
+                <img src= {tuit["avatar-image"]} className="wd-content-margin-one wd-change-image"/>
             <span className="wd-author-handle wd-author">{tuit.postedBy.username}</span>
             <span className="wd-handle" >@{tuit.handle}</span>
             <span className="wd-handle"> - {tuit.time}</span>
             <p className="wd-main-content">{tuit.comments}</p>
             <div className="wd-small-content wd-general-border">
                 <div className="wd-small-title">{tuit.title ? tuit.title : ""}</div>
-                <img src={tuit["logo-image"]} className="wd-image"/>
                 <div className="wd-small-text">{tuit.tuit? tuit.tuit : ""}</div>
+                {tuit["attachments"] ? (tuit["attachments"].image ? <img src={tuit["attachments"].image}className="wd-image"/> : "") : ""}
+                {tuit["attachments"] ? (tuit["attachments"].video ?
+                        <iframe width="550"
+                                height="330"
+                                src={(tuit["attachments"] ? "https://www.youtube.com/embed/"+ tuit["attachments"].video : "")}
+                                title="YouTube video player"
+                                frameBorder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen>
+                        </iframe>
+                        : ""): ""}
             </div>
             <div className="wd-end-border row">
 
@@ -37,9 +48,7 @@ const TuitListItem= ({tuit}) => {
                     </div>
 
             </div>
-
-                <i onClick={() => deleteTuit(tuit)} className="fas fa-remove-format fa-2x fa-pull-right"></i>
-        </div>
+            </div>
         </div>
     );
 }
