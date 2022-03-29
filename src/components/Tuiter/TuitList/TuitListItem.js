@@ -30,7 +30,7 @@ const TuitListItem= ({tuit}) => {
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowFullScreen>
                         </iframe>
-                        : ""): ""}
+                        : ""): "" }
             </div>
             <div className="wd-end-border row">
 
