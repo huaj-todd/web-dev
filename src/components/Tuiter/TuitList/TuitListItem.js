@@ -1,16 +1,19 @@
-import React from "react";
-import {useDispatch} from "react-redux";
+import React, {useEffect, useState} from "react";
+import {useDispatch, useSelector} from "react-redux";
+//import * as service from '../../services/tuits-service';
+import {findAllTuits,deleteTuit,createTuit,updateTuit}  from "../actions/tuits-actions";
 import TuitStats from "./tuit-stats"
 const TuitListItem= ({tuit}) => {
+    const tuits = useSelector(
+        state => state.tuits);
     const dispatch = useDispatch();
-    const deleteTuit = (tuit) => {
-        dispatch({type: 'delete-tuit', tuit})
-    };
+    useEffect(() => findAllTuits(dispatch),);
+    const [newTuit, setNewTuit] = useState({tuit: 'New tuit'});
     return(
 
         <div className="list-group-item">
             <div>
-                <i onClick={() => deleteTuit(tuit)} className="fas fa-remove-format fa-2x fa-pull-right"></i>
+                <i className="fas fa-remove-format float-end" onClick={() => deleteTuit(dispatch, tuit)}></i>
 
                 <img src= {tuit["avatar-image"]} className="wd-content-margin-one wd-change-image"/>
             <span className="wd-author-handle wd-author">{tuit.postedBy.username}</span>
