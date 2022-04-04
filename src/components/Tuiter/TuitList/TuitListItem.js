@@ -10,7 +10,7 @@ const TuitListItem= ({tuit}) => {
 
         <div className="list-group-item">
             <div>
-                <i className="fas fa-remove-format float-end" onClick={() => deleteTuit(dispatch, tuit)}></i>
+                <i className="fas fa-remove-format float-end" onClick={() => deleteTuit(dispatch, tuit)}/>
 
                 <img src= {tuit["avatar-image"]} className="wd-content-margin-one wd-change-image"/>
             <span className="wd-author-handle wd-author">{tuit.postedBy.username}</span>
@@ -32,22 +32,7 @@ const TuitListItem= ({tuit}) => {
                         </iframe>
                         : ""): "" }
             </div>
-            <div className="wd-end-border row">
-
-                    <div className="col ">
-                        <i className="fa fa-comment wd-icon wd-icon-most-left" >{tuit.stats.comments}</i>
-                    </div>
-                    <div className="col">
-                        <i className="fa fa-share wd-icon" >{tuit.stats.retuits}</i>
-                    </div>
-                    <div className="col">
-                        <TuitStats tuit={tuit}/>
-                    </div>
-                    <div className="col">
-                        <i className="fa fa-share wd-icon" >{""}</i>
-                    </div>
-
-            </div>
+            <TuitStats tuit={tuit}/>
             </div>
         </div>
     );
