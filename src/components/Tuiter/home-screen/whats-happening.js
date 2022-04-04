@@ -8,7 +8,7 @@ const WhatsHappening = () => {
 
     return (
         <>
-            <button onClick={() => createTuit(dispatch, newTuit)} className="btn btn-primary float-end">
+            <button onClick={() => createTuit(dispatch, newTuit)} className="btn btn-primary float-end wd-search-area">
                 Tuit
             </button>
             <textarea className="form-control w-75" onChange={(e) => setNewTuit({...newTuit, tuit: e.target.value})}></textarea>

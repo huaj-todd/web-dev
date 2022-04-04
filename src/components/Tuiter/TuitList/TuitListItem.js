@@ -1,14 +1,11 @@
-import React, {useEffect, useState} from "react";
-import {useDispatch, useSelector} from "react-redux";
+import React from "react";
+import {useDispatch} from "react-redux";
 //import * as service from '../../services/tuits-service';
-import {findAllTuits,deleteTuit,createTuit,updateTuit}  from "../actions/tuits-actions";
-import TuitStats from "./tuit-stats"
+import {deleteTuit}  from "../actions/tuits-actions";
+import TuitStats from "./tuit-stats";
+
 const TuitListItem= ({tuit}) => {
-    const tuits = useSelector(
-        state => state.tuits);
     const dispatch = useDispatch();
-    useEffect(() => findAllTuits(dispatch),);
-    const [newTuit, setNewTuit] = useState({tuit: 'New tuit'});
     return(
 
         <div className="list-group-item">
