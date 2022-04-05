@@ -9,14 +9,16 @@ const TuitListItem= ({tuit}) => {
     return(
 
         <div className="list-group-item">
-            <div>
-                <i className="fas fa-remove-format float-end" onClick={() => deleteTuit(dispatch, tuit)}/>
+            <i className="fas fa-remove-format float-end" onClick={() => deleteTuit(dispatch, tuit)}/>
+            <div className="row">
+            <div className="col-1">
+                <img src= {tuit["avatar-image"]} className="wd-change-image"/>
+            </div>
+            <div className="col-11">
 
-                <img src= {tuit["avatar-image"]} className="wd-content-margin-one wd-change-image"/>
-            <span className="wd-author-handle wd-author">{tuit.postedBy.username}</span>
+            <span className="wd-author-handle wd-author">{tuit.postedBy && tuit.postedBy.username}</span>
             <span className="wd-handle" >@{tuit.handle}</span>
             <span className="wd-handle"> - {tuit.time}</span>
-            <p className="wd-main-content">{tuit.comments}</p>
             <div className="wd-small-content wd-general-border">
                 <div className="wd-small-title">{tuit.title ? tuit.title : ""}</div>
                 <div className="wd-small-text">{tuit.tuit? tuit.tuit : ""}</div>
@@ -33,6 +35,7 @@ const TuitListItem= ({tuit}) => {
                         : ""): "" }
             </div>
             <TuitStats tuit={tuit}/>
+            </div>
             </div>
         </div>
     );

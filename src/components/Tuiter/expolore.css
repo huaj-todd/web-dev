@@ -40,8 +40,8 @@
 }
 .wd-image{
     float:right;
-    margin-right: 30px;
-    width: 550px;
+    margin-left: 90px;
+    width: 500px;
     height: 300px;
     border-radius: 20px;
     position: relative;
@@ -130,4 +130,8 @@
 .wd-l-single-topic{
     font-size: 13px;
     color:black;
+}
+.wd-icon-margin{
+    margin-left: 10px;
+    margin-right: 10px;
 }
