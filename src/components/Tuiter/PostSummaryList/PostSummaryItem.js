@@ -12,15 +12,27 @@ const PostSummaryItem = (
                          }) => {
     return(
         <div className="wd-content-border">
-            <p className="wd-content-margin">{post.topic}</p>
-            <div className="wd-content-margin">
-                                <span>{post.userName}</span>
-                                <i className="fas fa-user-check" ></i>
-                                <span> - {post.time}</span>
+            <div className="row">
+
+                <div className="col">
+                    <span className="wd-content-margin wd-important-text">{post.topic? post.topic : ""}</span>
+                    <div className="wd-content-margin">
+                        <span className="wd-important-text">{post.userName}</span>
+                        <i className="fas fa-user-check" ></i>
+                        <span> - {post.time}</span>
+                        <p className="wd-content-margin wd-important-text" >{post.title}</p>
+                        <p className="wd-content-margin" >{post.tweets? post.tweets : ""}</p>
+                    </div>
+                </div>
+                <div className="col-3">
+                    <img src={post.image} className="wd-image"/>
+                </div>
+
+
             </div>
-                            <img src={post.image} className="wd-image"/>
-                            <p className="wd-content-margin" >{post.title}</p>
-                            <p className="wd-content-margin" >{post.tweets? post.tweets : ""}</p>
+
+
+
         </div>
     );
 }

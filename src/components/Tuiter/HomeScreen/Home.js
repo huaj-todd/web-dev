@@ -14,10 +14,6 @@ const HomeScreen = () => {
             {PostList()}
             </div>
 
-            <div class="d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">
-            {PostSummaryList()}
-            </div>
-
             </div>
         </>
     )

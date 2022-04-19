@@ -119,3 +119,9 @@
     font-size: 13px;
     color:black;
 }
+
+.wd-important-text{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
