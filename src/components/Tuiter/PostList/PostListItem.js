@@ -40,6 +40,7 @@ const PostListItem= (
                 <i className="fa fa-heart wd-icon" >${Item.love_num}</i>
                 <i className="fa fa-share wd-icon" >${Item.share_num}</i>
             </div>
+
         </div>
     </div>
 
