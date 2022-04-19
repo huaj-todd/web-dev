@@ -15,7 +15,7 @@
       "video": "unKvMC3Y1kI"
     },
     "logo-image": "../../../images/react-blue.png",
-    "avatar-image": "../../../images/react-blue.png",
+    "avatar-image": "./tuiters/image_explores/react_js.png",
     "stats": {
       "comments": 123,
       "retuits": 234,
@@ -38,7 +38,7 @@
     },
     "time": "last month",
     "logo-image": "../../../images/node.png",
-    "avatar-image": "../../../images/node.png",
+    "avatar-image": "./tuiters/image_explores/react_js.png",
     "tuits": "120K",
     "stats": {
       "comments": 123,
@@ -60,7 +60,7 @@
     "title": "JavaScript is programming language that can run on browsers as well as desktops",
     "tuit": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     "logo-image": "../../../images/js.png",
-    "avatar-image": "../../../images/js.png",
+    "avatar-image": "./tuiters/image_explores/react_js.png",
     "tuits": "123K",
     "stats": {
       "comments": 123,
@@ -81,7 +81,7 @@
     "tuit": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     "time": "last week",
     "logo-image": "../../../images/jquery.png",
-    "avatar-image": "../../../images/jquery.png",
+    "avatar-image": "./tuiters/image_explores/react_js.png",
     "tuits": "122K",
     "stats": {
       "comments": 123,
@@ -102,7 +102,7 @@
     "tuit": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     "time": "last month",
     "logo-image": "../../../images/node.png",
-    "avatar-image": "../../../images/node.png",
+    "avatar-image": "./tuiters/image_explores/react_js.png",
     "tuits": "120K",
     "stats": {
       "comments": 123,
